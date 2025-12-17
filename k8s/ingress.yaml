@@ -1,0 +1,19 @@
+apiVersion: networking.k8s.io/v1
+kind: Ingress
+metadata:
+  name: prediction-api
+  labels:
+    app.kubernetes.io/name: prediction-api
+spec:
+  ingressClassName: nginx
+  rules:
+    - host: weather.local
+      http:
+        paths:
+          - pathType: Prefix
+            path: "/"
+            backend:
+              service:
+                name: prediction-api
+                port:
+                  number: 80

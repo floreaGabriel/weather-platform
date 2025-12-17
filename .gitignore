@@ -14,5 +14,5 @@ venv/
 .terraform/
 *.tfstate
 *.tfstate.backup
-.DS_store
+.DS_Store
 Thumbs.db

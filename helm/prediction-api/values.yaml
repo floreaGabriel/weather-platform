@@ -1,0 +1,7 @@
+appName: prediction-api
+
+namespace: prediction-api
+
+image:
+  name: floreagabriel/weather-api
+  tag: latest
